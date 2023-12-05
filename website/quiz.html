@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-12">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>knowledge quiz</title>
+    <link rel="stylesheet" href="styles.css">
+ <style>
+        body {
+            background-color:lightcyan;
+            /* background-size: cover; /* Adjusts the image to cover the entire background */
+            /* background-repeat: no-repeat; Prevents the image from repeating */ */
+        }
+    </style>
+</head>
+<nav class="nav">
+                    <ul class="nav-links">
+                <li><a href="project.html">Home</a></li>
+                <li><a href="contact.html">contact</a></li>
+</nav>
+<!-- Quiz Section -->
+<form id="quiz-form">
+    <h2> General Quiz:</h2>
+<br><br>
+    
+    <!-- Question 1 -->
+    <p>1.What is the capital of India?</p>
+    <label><input type="radio" name="q1" value="delhi"> Delhi</label>
+    <label><input type="radio" name="q1" value="karnataka">Karnataka</label>
+    <label><input type="radio" name="q1" value="mumbai"> Mumbai</label>
+<br><br>
+
+    <!-- Question 2 -->
+    <p>2.How many continents are there?</p>
+    <label><input type="radio" name="q2" value="5"> 5</label>
+    <label><input type="radio" name="q2" value="7"> 7</label>
+    <label><input type="radio" name="q2" value="9"> 9</label>
+<br><br>
+    <!-- Question 3 -->
+    <p>3.How many State are there in India?</p>
+    <label><input type="radio" name="q3" value="27"> 27</label>
+    <label><input type="radio" name="q3" value="28"> 28</label>
+    <label><input type="radio" name="q3" value="29"> 29</label>
+<br><br>
+    <!-- Question 4 -->
+    <p>4.Which is the Oldest Amphitheater in Asia?</p>
+    <label><input type="radio" name="q4" value="rang ghar"> rang ghar(assam)</label>
+    <label><input type="radio" name="q4" value="lal mahal"> lal mahal(delhi)</label>
+    <label><input type="radio" name="q4" value="shish mahal"> shish mahal(agra)</label>
+<br><br>
+    <!-- Question 5 -->
+    <p>5.Who said, “For the next 50 Years let Mother India be the only God to be worshipped by the Indians”? </p>
+    <label><input type="radio" name="q5" value="swami vivekananda"> swami vivekananda</label>
+    <label><input type="radio" name="q5" value="tagore"> tagore</label>
+    <label><input type="radio" name="q5" value="lal bahadur"> lal bahadur</label>
+<br><br>
+    <!-- Question 6 -->
+    <p>6.Who was the first Asian to win the Nobel Prize</p>
+    <label><input type="radio" name="q6" value="rabindranath tagore"> rabindranath tagore </label>
+    <label><input type="radio" name="q6" value="rahul gandhi"> rahul ghandi</label>
+    <label><input type="radio" name="q6" value="mohan singh"> mohan singh</label>
+<br><br>
+    <!-- Question 7 -->
+    <p>7. What is the Minimum Age for Chief Minister Eligibility?</p>
+    <label><input type="radio" name="q7" value="18 years"> 18 years</label>
+    <label><input type="radio" name="q7" value="20 years"> 20 years</label>
+    <label><input type="radio" name="q7" value="25 years"> 25 years</label>
+<br><br>
+    <!-- Question 8 -->
+    <p>8.Which Country’s Constitution is the Longest Composed Constitution on Earth?</p>
+    <label><input type="radio" name="q8" value="india"> india</label>
+    <label><input type="radio" name="q8" value="france"> france</label>
+    <label><input type="radio" name="q8" value="italy"> italy</label>
+<br><br>
+    <!-- Question 9 -->
+    <p>9.How many Branches are there in the Indian constitution?</p>
+    <label><input type="radio" name="q9" value="one"> one</label>
+    <label><input type="radio" name="q9" value="two"> two</label>
+    <label><input type="radio" name="q9" value="three"> three</label>
+<br><br>
+    <!-- Question 10 -->
+    <p>10.Which Rights were not taken from the British Constitution into the Indian Constitution?</p>
+    <label><input type="radio" name="q10" value="fundamental rights"> fundamental rights</label>
+    <label><input type="radio" name="q10 value="equality rights"> equality rights</label>
+    <label><input type="radio" name="q10" value="right to talk"> right to talk</label>
+    <br><br>
+    <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+</form>
+
+<!-- Quiz Result Display -->
+<p id="quiz-result" class="hidden"></p>
+
+<script>
+    // JavaScript function to submit and evaluate the quiz
+    function submitQuiz() {
+        const form = document.getElementById('quiz-form');
+        const resultDisplay = document.getElementById('quiz-result');
+        
+        // Check answers (this is a simple example, you might want to validate answers server-side)
+        const q1Answer = form.elements['q1'].value;
+        const q2Answer = form.elements['q2'].value;
+        const q3Answer = form.elements['q3'].value;
+        const q4Answer = form.elements['q4'].value;
+        const q5Answer = form.elements['q5'].value;
+        const q6Answer = form.elements['q6'].value;
+        const q7Answer = form.elements['q7'].value;
+        const q8Answer = form.elements['q8'].value;
+        const q9Answer = form.elements['q9'].value;
+        const q10Answer = form.elements['q10'].value;
+
+        // Display result
+        resultDisplay.textContent =
+ `Your answers: Q1 - ${q1Answer},
+                Q2 - ${q2Answer},
+                Q3 - ${q3Answer},
+                Q4 - ${q4Answer},
+                Q5 - ${q5Answer},
+                Q6 - ${q6Answer},
+                Q7 - ${q7Answer},
+                Q8 - ${q8Answer},
+                Q9 - ${q9Answer},
+                Q10 - ${q10Answer}`;
+
+        resultDisplay.style.display = 'block';
+    }
+</script>

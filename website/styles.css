@@ -1,0 +1,104 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background images for different pages */
+.homepage {
+    background-image: url('C:\Users\Shazeel Ali\Downloads\MC0030-HRD-Ministry-Guidelines-and-Ways-for-Interactive-Learning-2.jpg');
+            background-size: cover; /* Adjusts the image to cover the entire background */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            color:blueviolet;
+}
+
+.course-page {
+    background-image: url('image6.jpg');
+            background-size: cover; /* Adjusts the image to cover the entire background */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            color:blueviolet;
+            
+
+}
+.quiz-page {
+    background-image: url('image6.jpg');
+            background-size: cover; /* Adjusts the image to cover the entire background */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            color:darkslateblue;
+}
+
+.contact-page {
+    background-image: url('image6.jpg');
+            background-size: cover; /* Adjusts the image to cover the entire background */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            color:black;
+}
+
+/* Apply common styles for headers, navigation, sections, and buttons */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    color:skyblue;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color:black;
+}
+
+.hero {
+    text-align: center;
+    color:lightgreen;
+    margin: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color:black;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.service-btn 
+{
+    padding: 12px 25px;
+    background-color: #5b5bb0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid #5b5bb0;
+    cursor: pointer;
+    transition: .2s;
+
+}
+.service-btn:hover{
+    background-color: transparent;
+    color: #5b5bb0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Add specific styles for each page's content as needed */
+
+/* Add your additional CSS styles for sections, forms, and other elements as needed */
